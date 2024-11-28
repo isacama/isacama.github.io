@@ -1,6 +1,6 @@
 /* Header Styling */
 header {
-    background: url('000006370006.jpg') no-repeat center center/cover;
+    background: url('000006370006.jpg') no-repeat center center/cover; /* Original, reused */
     color: #d1e7ff; /* Light blue text for contrast */
     padding: 60px 0; /* Increase padding for larger header */
     text-align: center;
@@ -8,14 +8,14 @@ header {
 }
 
 /* Centered Text Box in Header */
-.header-content {
+.header-content { /* NEW: Reusable styling for headers */
     background-color: rgba(13, 30, 51, 0.8); /* Dark blue with transparency */
     color: #ffffff; /* White text */
     display: inline-block;
-    padding: 20px 40px;
+    padding: 20px 40px; /* NEW: Uniform padding for all headers */
     border-radius: 12px; /* Rounded corners */
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 /* Navigation Bar */
