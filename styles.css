@@ -18,19 +18,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Box styling for header text */
-header h1, header p {
-    background-color: rgba(13, 30, 51, 0.9); /* Dark blue with slight transparency */
-    color: #ffffff; /* White text for better contrast */
-    display: inline-block;
-    padding: 15px 30px;
-    border-radius: 10px; /* Rounded corners */
-    margin: 0 auto;
-    max-width: 90%;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: shadow for better visibility */
-}
-
+/* Navigation Bar */
 nav ul {
     background: #173a5e; /* Slightly lighter blue for navigation */
     overflow: hidden;
@@ -41,11 +29,38 @@ nav ul {
     list-style: none;
 }
 
+nav ul li {
+    display: inline;
+    padding: 15px;
+}
+
 nav ul li a {
     color: #d1e7ff;
     text-decoration: none;
 }
 
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between text and image */
+    margin-top: 20px;
+}
+
+.about-container p {
+    flex: 1; /* Text takes up remaining space */
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+.about-container .headshot {
+    max-width: 200px; /* Set a fixed size for the headshot */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Main Content Section */
 main {
     padding: 20px;
     background: #102a45; /* Darker blue for sections */
@@ -56,6 +71,7 @@ h1, h2 {
     color: #d1e7ff;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px 0;
@@ -63,20 +79,3 @@ footer {
     color: #d1e7ff;
     margin-top: 20px;
 }
-
-/* Enlarged gallery images */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust for larger images */
-    gap: 20px; /* Optional: increase spacing between images */
-    margin-top: 20px;
-}
-
-.gallery img {
-    width: 100%; /* Auto-fit within grid */
-    height: auto; /* Maintain aspect ratio */
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
