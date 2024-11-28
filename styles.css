@@ -83,23 +83,23 @@ footer {
 /* Gallery Section */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusts number of columns dynamically */
-    gap: 10px; /* Space between images */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Increase min width for larger images */
+    gap: 5px; /* Reduce the gap between images */
     margin-top: 20px;
 }
 
 .gallery img {
     width: 100%; /* Images fit within grid items */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    cursor: pointer; /* Add pointer cursor for interactivity */
+    border-radius: 6px; /* Keep slight rounding for aesthetics */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    cursor: pointer; /* Interactive pointer */
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth animations */
 }
 
 /* Hover Effect for Images */
 .gallery img:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: scale(1.03); /* Slight zoom effect */
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
