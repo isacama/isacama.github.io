@@ -4,16 +4,19 @@ header {
     color: #d1e7ff; /* Light blue text for contrast */
     padding: 20px 0;
     text-align: center;
+    position: relative; /* For text positioning */
 }
 
-/* Update body background and link colors */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: #0d1e33; /* Dark blue */
+/* Box around the header text */
+header h1, header p {
+    background-color: rgba(13, 30, 51, 0.8); /* Dark blue with slight transparency */
     color: #d1e7ff; /* Light blue for text */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px; /* Optional: rounded corners for the box */
+    margin: 0 auto; /* Center the box */
+    max-width: 90%; /* Keep the text box within reasonable size limits */
+    text-align: center;
 }
 
 nav ul {
