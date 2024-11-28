@@ -54,8 +54,8 @@ nav ul li a {
 }
 
 .about-container .headshot {
-    width: 160px; /* Increase width */
-    height: 220px; /* Reduce height slightly */
+    width: 190px; /* Increase width */
+    height: 230px; /* Reduce height slightly */
     border-radius: 50%; /* Makes it oval */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
