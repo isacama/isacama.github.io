@@ -1,21 +1,23 @@
+/* Update header background with the image */
+header {
+    background: url('000006370006.jpg') no-repeat center center/cover;
+    color: #d1e7ff; /* Light blue text for contrast */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Update body background and link colors */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    background: #0d1e33; /* Dark blue */
+    color: #d1e7ff; /* Light blue for text */
 }
 
 nav ul {
-    background: #444;
+    background: #173a5e; /* Slightly lighter blue for navigation */
     overflow: hidden;
     color: #fff;
     padding: 0;
@@ -24,44 +26,25 @@ nav ul {
     list-style: none;
 }
 
-nav ul li {
-    display: inline;
-    padding: 15px;
-}
-
 nav ul li a {
-    color: #fff;
+    color: #d1e7ff;
     text-decoration: none;
 }
 
 main {
     padding: 20px;
-    background: #fff;
+    background: #102a45; /* Darker blue for sections */
+    color: #d1e7ff;
 }
 
 h1, h2 {
-    color: #333;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #d1e7ff;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #333;
-    color: #fff;
+    background: #173a5e;
+    color: #d1e7ff;
     margin-top: 20px;
 }
