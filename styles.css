@@ -4,19 +4,20 @@ header {
     color: #d1e7ff; /* Light blue text for contrast */
     padding: 20px 0;
     text-align: center;
-    position: relative; /* For text positioning */
+    position: relative; /* For proper positioning of the text box */
 }
 
-/* Box around the header text */
+/* Box styling for header text */
 header h1, header p {
-    background-color: rgba(13, 30, 51, 0.8); /* Dark blue with slight transparency */
-    color: #d1e7ff; /* Light blue for text */
+    background-color: rgba(13, 30, 51, 0.9); /* Dark blue with slight transparency */
+    color: #ffffff; /* White text for better contrast */
     display: inline-block;
-    padding: 10px 20px;
-    border-radius: 8px; /* Optional: rounded corners for the box */
-    margin: 0 auto; /* Center the box */
-    max-width: 90%; /* Keep the text box within reasonable size limits */
+    padding: 15px 30px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 0 auto;
+    max-width: 90%;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: shadow for better visibility */
 }
 
 nav ul {
