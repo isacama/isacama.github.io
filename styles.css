@@ -48,3 +48,20 @@ footer {
     color: #d1e7ff;
     margin-top: 20px;
 }
+
+/* Enlarged gallery images */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust for larger images */
+    gap: 20px; /* Optional: increase spacing between images */
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%; /* Auto-fit within grid */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
