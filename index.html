@@ -3,35 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Isabela Camacho — Home</title>
+  <title>Isabela Camacho - Home</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Hero header with trees image (only here, not on body) -->
   <header class="site-header">
-    <div class="container header-content">
-      <h1 class="site-title">Isabela Camacho</h1>
-      <p class="site-subtitle">Undergraduate Student & Researcher</p>
+    <div class="header-content">
+      <h1>Isabela Camacho</h1>
+      <p>Aspiring Scientist | Passionate Researcher</p>
     </div>
   </header>
 
-  <!-- Sticky nav -->
-  <nav class="site-nav">
-    <div class="container">
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="other-experience.html">Other Experience</a></li>
-        <li><a href="hobbies.html">Hobbies</a></li>
-      </ul>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="other-experience.html">Other Experience</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+    </ul>
   </nav>
 
-  <!-- Main content -->
-  <main class="container">
+  <main>
     <!-- About -->
-    <section id="about" class="card">
+    <section id="about">
       <h2>About Me</h2>
-      <div class="about-grid">
+      <div class="about-container">
         <div class="about-text">
           <p>
             Hi! I'm Isabela Camacho, a junior Physics major at Santa Clara University with minors in Mathematics and Computer Science &amp; Engineering. 
@@ -52,24 +47,21 @@
           </p>
         </div>
         <div class="about-photo">
-          <!-- keep on the right, masked to an oval -->
-          <img src="headshot-2024.png" alt="Headshot of Isabela Camacho" class="headshot oval" />
+          <img src="headshot-2024.png" alt="Isabela Camacho headshot" class="headshot oval" />
         </div>
       </div>
     </section>
 
     <!-- Education -->
-    <section id="education" class="card">
+    <section id="education">
       <h2>Education</h2>
-      <p>
-        <strong>Santa Clara University</strong>, Santa Clara, CA <br />
-        <em>Bachelor of Science in Physics</em> <br />
-        Minors: Mathematics, Computer Science &amp; Engineering <br />
-        GPA: 3.5 / 4.0 <br />
-        Sept 2022 – Jun 2026
-      </p>
+      <p><strong>Santa Clara University</strong>, Santa Clara, CA <br>
+      <em>Bachelor of Science in Physics</em> <br>
+      Minors: Mathematics, Computer Science &amp; Engineering <br>
+      GPA: 3.5 / 4.0 <br>
+      Sept 2022 – Jun 2026</p>
 
-      <p><strong>Relevant Coursework (Completed):</strong><br />
+      <p><strong>Relevant Coursework (Completed):</strong><br>
         Differential Equations, Multivariable Calculus I–III, Physics for Scientists and Engineers I–III,
         Numerical Methods for Physics, Electronic Circuits for Scientists, Modern Physics Topics,
         Electricity &amp; Magnetism I–II, Introduction to Neuroscience, Advanced Programming, 
@@ -77,90 +69,78 @@
         Discrete Math, Astrophysics.
       </p>
 
-      <p><strong>Planned Coursework:</strong><br />
+      <p><strong>Planned Coursework:</strong><br>
         Machine Learning, Cosmology, Quantum Mechanics I–II, Probability and Statistics I–II,
         Theory of Algorithms, Advanced Electromagnetism &amp; Optics, Thermodynamics.
       </p>
     </section>
 
     <!-- Research -->
-    <section id="research" class="card">
+    <section id="research">
       <h2>Research Experience</h2>
 
-      <article class="research-entry">
-        <header>
-          <h3>Dr. Michelle McCulley's Lab – Molecular Dynamics Project</h3>
-          <p class="meta"><em>Research Assistant</em> · Santa Clara, CA · Sept 2024 – Present</p>
-        </header>
+      <div class="research-entry">
+        <h3>Dr. Michelle McCulley's Lab – Molecular Dynamics Project</h3>
+        <p><em>Research Assistant</em>, Santa Clara, CA — Sept 2024 – Present</p>
         <ul>
           <li>Performed MD simulation analyses of protein–DNA chimeras to assess thermodynamic stability and binding.</li>
           <li>Developed numerical methods to quantify protein thermostability and DNA-binding persistence.</li>
           <li>Connected simulation results to protein folding studies to study sequence–stability relationships.</li>
         </ul>
-      </article>
+      </div>
 
-      <article class="research-entry">
-        <header>
-          <h3>Cold Spring Harbor Laboratory – Undergraduate Research Program (Klindt Lab)</h3>
-          <p class="meta"><em>Research Intern</em> · Cold Spring Harbor, NY · Jun 2025 – Aug 2025</p>
-        </header>
+      <div class="research-entry">
+        <h3>Cold Spring Harbor Laboratory – Undergraduate Research Program (Klindt Lab)</h3>
+        <p><em>Research Intern</em>, Cold Spring Harbor, NY — Jun 2025 – Aug 2025</p>
         <ul>
           <li>Investigated limits of linear probes for neural network interpretability and generalization.</li>
           <li>Implemented sparse autoencoders (SAEs) and dictionary learning to study feature identifiability and superposition.</li>
           <li>Built evaluation pipelines using mean correlation coefficient (MCC) and logistic regression probes.</li>
           <li>Preparing manuscript for submission to a competitive ML conference.</li>
         </ul>
-      </article>
+      </div>
 
-      <article class="research-entry">
-        <header>
-          <h3>Caltech – Dr. David J. Anderson's Lab (Student-Faculty Program)</h3>
-          <p class="meta"><em>Intern</em> · Pasadena, CA · Jun 2024 – Aug 2024</p>
-        </header>
+      <div class="research-entry">
+        <h3>Caltech – Dr. David J. Anderson's Lab (Student-Faculty Program)</h3>
+        <p><em>Intern</em>, Pasadena, CA — Jun 2024 – Aug 2024</p>
         <ul>
           <li>Modeled neuropeptide release mechanisms underlying aggression in MATLAB.</li>
           <li>Built mechanistic models simulating local vs. long-range release.</li>
           <li>Compared models to experimental line attractor decay constants; presented results at SFP Poster Session.</li>
         </ul>
-      </article>
+      </div>
 
-      <article class="research-entry">
-        <header>
-          <h3>University of Florida – Dr. Gajavelli's Lab (Protein Residue Project)</h3>
-          <p class="meta"><em>Research Assistant</em> · Santa Clara, CA · Jun 2023 – Jun 2024</p>
-        </header>
+      <div class="research-entry">
+        <h3>University of Florida – Dr. Gajavelli's Lab (Protein Residue Project)</h3>
+        <p><em>Research Assistant</em>, Santa Clara, CA — Jun 2023 – Jun 2024</p>
         <ul>
           <li>Analyzed entropy and folding of GFP using Python and computational sequence analysis.</li>
           <li>Initiated collaboration with SCU professor Dr. McCulley, contributing to a joint publication.</li>
           <li>Presented findings at the American Physical Society Far West Section Meeting.</li>
         </ul>
-      </article>
+      </div>
 
-      <article class="research-entry">
-        <header>
-          <h3>Young Researchers Program</h3>
-          <p class="meta"><em>Research Assistant</em> · Miami, FL · Sep 2020 – Nov 2021</p>
-        </header>
+      <div class="research-entry">
+        <h3>Young Researchers Program</h3>
+        <p><em>Research Assistant</em>, Miami, FL — Sep 2020 – Nov 2021</p>
         <ul>
           <li>Built LIBS-enabled robot to determine metal composition of 1970s pennies.</li>
           <li>Presented poster at the SciX Conference in Rhode Island.</li>
         </ul>
-      </article>
+      </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="card">
+    <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:icamacho@scu.edu">icamacho@scu.edu</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/isabela-camacho-a15a1a226/" target="_blank" rel="noopener">View Profile</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/isabela-camacho-a15a1a226/" target="_blank">View Profile</a></p>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Isabela Camacho</p>
-    </div>
+  <footer>
+    <p>&copy; 2025 Isabela Camacho</p>
   </footer>
 </body>
 </html>
+
