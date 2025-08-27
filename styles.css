@@ -1,118 +1,105 @@
-/* General Reset */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333;
-  line-height: 1.6;
+/* Header Styling */
+header {
+    background: url('000006370006.jpg') no-repeat center center/cover; /* Original, reused */
+    color: #d1e7ff; /* Light blue text for contrast */
+    padding: 60px 0; /* Increase padding for larger header */
+    text-align: center;
+    position: relative;
 }
 
-/* Header with trees image only */
-.site-header {
-  background: url("trees-hero.jpg") no-repeat center center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-.site-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-.site-header p {
-  margin: 10px 0 0;
-  font-size: 1.2rem;
+/* Centered Text Box in Header */
+.header-content { /* NEW: Reusable styling for headers */
+    background-color: rgba(13, 30, 51, 0.8); /* Dark blue with transparency */
+    color: #ffffff; /* White text */
+    display: inline-block;
+    padding: 20px 40px; /* NEW: Uniform padding for all headers */
+    border-radius: 12px; /* Rounded corners */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
-/* Navigation */
-nav {
-  background-color: #0d6efd; /* blue */
-}
+/* Navigation Bar */
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-nav li {
-  margin: 0;
-}
-nav a {
-  display: block;
-  padding: 14px 20px;
-  text-decoration: none;
-  color: white;
-}
-nav a:hover,
-nav a.active {
-  background-color: #0b5ed7;
+    background: #173a5e; /* Slightly lighter blue for navigation */
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    list-style: none;
 }
 
-/* Main layout */
-main {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 0 20px;
-}
-section {
-  margin-bottom: 40px;
-}
-h2 {
-  color: #0d6efd;
-  margin-bottom: 15px;
+nav ul li {
+    display: inline;
+    padding: 15px;
 }
 
-/* About section with grid */
+nav ul li a {
+    color: #d1e7ff;
+    text-decoration: none;
+}
+
+/* About Section */
 .about-container {
-  display: grid;
-  gap: 20px;
-}
-@media (min-width: 768px) {
-  .about-container {
-    grid-template-columns: 2fr 1fr; /* text left, photo right */
+    display: flex;
     align-items: center;
-  }
-}
-.about-text p {
-  margin-bottom: 15px;
-}
-.about-photo {
-  text-align: center;
-}
-.headshot.oval {
-  width: 220px;
-  height: 280px;
-  object-fit: cover;
-  -webkit-clip-path: ellipse(50% 45% at 50% 50%);
-          clip-path: ellipse(50% 45% at 50% 50%);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    gap: 20px; /* Space between text and image */
+    margin-top: 20px;
 }
 
-/* Research entries */
-.research-entry {
-  margin-bottom: 25px;
+.about-container p {
+    flex: 1; /* Text takes up remaining space */
+    line-height: 1.8;
+    font-size: 1.1em;
 }
-.research-entry h3 {
-  margin-bottom: 5px;
-  color: #0d6efd;
+
+.about-container .headshot {
+    width: 190px; /* Increase width */
+    height: 240px; /* Reduce height slightly */
+    border-radius: 50%; /* Makes it oval */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.research-entry p.meta {
-  color: #666;
-  font-size: 0.9rem;
+
+
+/* Main Content Section */
+main {
+    padding: 20px;
+    background: #102a45; /* Darker blue for sections */
+    color: #d1e7ff;
 }
-.research-entry ul {
-  margin-top: 8px;
-  padding-left: 20px;
+
+h1, h2 {
+    color: #d1e7ff;
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #ddd;
-  color: #666;
-  font-size: 0.9rem;
+    text-align: center;
+    padding: 10px 0;
+    background: #173a5e;
+    color: #d1e7ff;
+    margin-top: 20px;
 }
 
+/* Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Increase min width for larger images */
+    gap: 5px; /* Reduce the gap between images */
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%; /* Images fit within grid items */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 6px; /* Keep slight rounding for aesthetics */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    cursor: pointer; /* Interactive pointer */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth animations */
+}
+
+/* Hover Effect for Images */
+.gallery img:hover {
+    transform: scale(1.03); /* Slight zoom effect */
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
