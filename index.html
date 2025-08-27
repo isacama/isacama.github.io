@@ -1,130 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isabela Camacho - Home</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Isabela Camacho - Home</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Isabela Camacho</h1>
-            <p>Aspiring Scientist | Passionate Researcher</p>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="other-experience.html">Other Experience</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-container">
-                <p>
+  <header class="site-header">
+    <div class="container header-content">
+      <h1 class="site-title">Isabela Camacho</h1>
+      <p class="site-subtitle">Computational Neuroscience &amp; Biophysics</p>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="container">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="other-experience.html">Other Experience</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
             Hi! I'm Isabela Camacho, a junior Physics major at Santa Clara University with minors in Mathematics and Computer Science &amp; Engineering. 
             My research experiences have spanned from biophysics, to computational neuroscience, to machine learning.
-        </p>
-        <p>
+          </p>
+          <p>
             In summer 2025, I worked at <strong>Cold Spring Harbor Laboratory in David Klindt's Lab</strong>, studying when linear probes fail and how 
             <em>sparse autoencoders</em> and dictionary learning can reveal more interpretable latent structure. Previously, I interned in 
             <strong>Dr. David J. Anderson’s lab at Caltech</strong> (WAVE ’24), developing mechanistic models of neuropeptide release to explain 
             line-attractor dynamics in VMHvl. I’m now a research assistant in <strong>Prof. Michelle McCulley’s lab at SCU</strong>, using 
             molecular dynamics to analyze protein–DNA chimeras and connect simulation results to protein folding and stability.
-        </p>
-        <p>
+          </p>
+          <p>
             Earlier, under <strong>Dr. Shyam Gajavelli at the University of Florida</strong>, I used computational sequence analysis to study Shannon entropy in 
             <em>green fluorescent protein</em> (GFP) to predict conserved residues. Looking ahead, I plan to pursue graduate study in 
             <strong>computational neuroscience</strong> or <strong>biophysics</strong>—with the long-term goal of turning principled models 
             into tools that can impact human health.
-        </p>
-                <img src="headshot 2024.png" alt="Isabela Camacho Headshot" class="headshot">
-            </div>
-        </section>
-        <section id="education">
-    <h2>Education</h2>
-    <p><strong>Santa Clara University</strong>, Santa Clara, CA <br>
-    <em>Bachelor of Science in Physics</em> <br>
-    Minors: Mathematics, Computer Science &amp; Engineering <br>
-    GPA: 3.5 / 4.0 <br>
-    Sept 2022 – Jun 2026</p>
+          </p>
+        </div>
+        <div class="about-photo">
+          <img src="headshot-2024.png" alt="Isabela Camacho headshot" class="headshot" />
+        </div>
+      </div>
+    </section>
 
-    <p><strong>Relevant Coursework (Completed):</strong><br>
-    Differential Equations, Multivariable Calculus I–III, Physics for Scientists and Engineers I–III,
-    Numerical Methods for Physics, Electronic Circuits for Scientists, Modern Physics Topics,
-    Electricity &amp; Magnetism I–II, Introduction to Neuroscience, Advanced Programming, 
-    Analytical Mechanics, Abstract Data Types and Data Structures, Logic Design, Linear Algebra, 
-    Discrete Math, Astrophysics.</p>
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <p>
+        <strong>Santa Clara University</strong>, Santa Clara, CA <br />
+        <em>Bachelor of Science in Physics</em> <br />
+        Minors: Mathematics, Computer Science &amp; Engineering <br />
+        GPA: 3.5 / 4.0 <br />
+        Sept 2022 – Jun 2026
+      </p>
 
-    <p><strong>Planned Coursework:</strong><br>
-    Machine Learning, Cosmology, Quantum Mechanics I–II, Probability and Statistics I–II,
-    Theory of Algorithms, Advanced Electromagnetism &amp; Optics, Thermodynamics.</p>
-</section>
+      <p><strong>Relevant Coursework (Completed):</strong><br />
+        Differential Equations, Multivariable Calculus I–III, Physics for Scientists and Engineers I–III,
+        Numerical Methods for Physics, Electronic Circuits for Scientists, Modern Physics Topics,
+        Electricity &amp; Magnetism I–II, Introduction to Neuroscience, Advanced Programming, 
+        Analytical Mechanics, Abstract Data Types and Data Structures, Logic Design, Linear Algebra, 
+        Discrete Math, Astrophysics.
+      </p>
 
-<section id="research">
-    <h2>Research Experience</h2>
-    <div class="research-entry">
-        <h3>Dr. Michelle McCulley's Lab – Molecular Dynamics Project</h3>
-        <p><em>Research Assistant</em>, Santa Clara, CA — Sept 2024 – Present</p>
+      <p><strong>Planned Coursework:</strong><br />
+        Machine Learning, Cosmology, Quantum Mechanics I–II, Probability and Statistics I–II,
+        Theory of Algorithms, Advanced Electromagnetism &amp; Optics, Thermodynamics.
+      </p>
+    </section>
+
+    <section id="research" class="card">
+      <h2>Research Experience</h2>
+
+      <article class="research-entry">
+        <header>
+          <h3>Dr. Michelle McCulley's Lab – Molecular Dynamics Project</h3>
+          <p class="meta"><em>Research Assistant</em> · Santa Clara, CA · Sept 2024 – Present</p>
+        </header>
         <ul>
-            <li>Performed MD simulation analyses of protein–DNA chimeras to assess thermodynamic stability and binding.</li>
-            <li>Developed numerical methods to quantify protein thermostability and DNA-binding persistence.</li>
-            <li>Connected simulation results to protein folding studies to study sequence–stability relationships.</li>
+          <li>Performed MD simulation analyses of protein–DNA chimeras to assess thermodynamic stability and binding.</li>
+          <li>Developed numerical methods to quantify protein thermostability and DNA-binding persistence.</li>
+          <li>Connected simulation results to protein folding studies to study sequence–stability relationships.</li>
         </ul>
-    </div>
+      </article>
 
-    <div class="research-entry">
-        <h3>Cold Spring Harbor Laboratory – Undergraduate Research Program (Klindt Lab)</h3>
-        <p><em>Research Intern</em>, Cold Spring Harbor, NY — Jun 2025 – Aug 2025</p>
+      <article class="research-entry">
+        <header>
+          <h3>Cold Spring Harbor Laboratory – Undergraduate Research Program (Klindt Lab)</h3>
+          <p class="meta"><em>Research Intern</em> · Cold Spring Harbor, NY · Jun 2025 – Aug 2025</p>
+        </header>
         <ul>
-            <li>Investigated limits of linear probes for neural network interpretability and generalization.</li>
-            <li>Implemented sparse autoencoders (SAEs) and dictionary learning to study feature identifiability and superposition.</li>
-            <li>Built evaluation pipelines using mean correlation coefficient (MCC) and logistic regression probes.</li>
-            <li>Preparing manuscript for submission to a competitive ML conference.</li>
+          <li>Investigated limits of linear probes for neural network interpretability and generalization.</li>
+          <li>Implemented sparse autoencoders (SAEs) and dictionary learning to study feature identifiability and superposition.</li>
+          <li>Built evaluation pipelines using mean correlation coefficient (MCC) and logistic regression probes.</li>
+          <li>Preparing manuscript for submission to a competitive ML conference.</li>
         </ul>
-    </div>
+      </article>
 
-    <div class="research-entry">
-        <h3>Caltech – Dr. David J. Anderson's Lab (Student-Faculty Program)</h3>
-        <p><em>Intern</em>, Pasadena, CA — Jun 2024 – Aug 2024</p>
+      <article class="research-entry">
+        <header>
+          <h3>Caltech – Dr. David J. Anderson's Lab (Student-Faculty Program)</h3>
+          <p class="meta"><em>Intern</em> · Pasadena, CA · Jun 2024 – Aug 2024</p>
+        </header>
         <ul>
-            <li>Modeled neuropeptide release mechanisms underlying aggression in MATLAB.</li>
-            <li>Built mechanistic models simulating local vs. long-range release.</li>
-            <li>Compared models to experimental line attractor decay constants; presented results at SFP Poster Session.</li>
+          <li>Modeled neuropeptide release mechanisms underlying aggression in MATLAB.</li>
+          <li>Built mechanistic models simulating local vs. long-range release.</li>
+          <li>Compared models to experimental line attractor decay constants; presented results at SFP Poster Session.</li>
         </ul>
-    </div>
+      </article>
 
-    <div class="research-entry">
-        <h3>University of Florida – Dr. Gajavelli's Lab (Protein Residue Project)</h3>
-        <p><em>Research Assistant</em>, Santa Clara, CA — Jun 2023 – Jun 2024</p>
+      <article class="research-entry">
+        <header>
+          <h3>University of Florida – Dr. Gajavelli's Lab (Protein Residue Project)</h3>
+          <p class="meta"><em>Research Assistant</em> · Santa Clara, CA · Jun 2023 – Jun 2024</p>
+        </header>
         <ul>
-            <li>Analyzed entropy and folding of GFP using Python and computational sequence analysis.</li>
-            <li>Initiated collaboration with SCU professor Dr. McCulley, contributing to a joint publication.</li>
-            <li>Presented findings at the American Physical Society Far West Section Meeting.</li>
+          <li>Analyzed entropy and folding of GFP using Python and computational sequence analysis.</li>
+          <li>Initiated collaboration with SCU professor Dr. McCulley, contributing to a joint publication.</li>
+          <li>Presented findings at the American Physical Society Far West Section Meeting.</li>
         </ul>
-    </div>
+      </article>
 
-    <div class="research-entry">
-        <h3>Young Researchers Program</h3>
-        <p><em>Research Assistant</em>, Miami, FL — Sep 2020 – Nov 2021</p>
+      <article class="research-entry">
+        <header>
+          <h3>Young Researchers Program</h3>
+          <p class="meta"><em>Research Assistant</em> · Miami, FL · Sep 2020 – Nov 2021</p>
+        </header>
         <ul>
-            <li>Built LIBS-enabled robot to determine metal composition of 1970s pennies.</li>
-            <li>Presented poster at the SciX Conference in Rhode Island.</li>
+          <li>Built LIBS-enabled robot to determine metal composition of 1970s pennies.</li>
+          <li>Presented poster at the SciX Conference in Rhode Island.</li>
         </ul>
-    </div>
-</section>
+      </article>
+    </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:icamacho@scu.edu">icamacho@scu.edu</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/isabela-camacho-a15a1a226/" target="_blank">View Profile</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Isabela Camacho</p>
-    </footer>
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:icamacho@scu.edu">icamacho@scu.edu</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/isabela-camacho-a15a1a226/" target="_blank" rel="noopener">View Profile</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Isabela Camacho</p>
+    </div>
+  </footer>
 </body>
 </html>
